@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Wildan Daffa Abdillah | Cybersecurity Specialist & Web Developer</title>
+    <meta name="description"
+        content="Portfolio professional Wildan Daffa Abdillah - IT Student at President University specializing in Cybersecurity, Web Development, and Digital Infrastructure.">
+    <meta name="keywords"
+        content="Wildan Daffa Abdillah, Cybersecurity Portfolio, IT Student Portfolio, Web Developer Portfolio, President University, Diskominfosantik Bekasi">
+    <meta name="author" content="Wildan Daffa Abdillah">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wildan Daffa Abdillah | Portfolio">
+    <meta property="og:description"
+        content="Cybersecurity Specialist & Web Developer Portfolio - Explore projects, certifications, and terminal journey.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Grid & Particles Effect -->
+    <div class="cyber-grid"></div>
+    <div class="particles-container" id="particles-js"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>WDA<span class="logo-accent">.sec /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#certifications" class="nav-item">Certifications</a>
+                <a href="#terminal" class="nav-item">Terminal CLI</a>
+                <a href="#contact" class="nav-item btn-nav">Contact Me</a>
+            </nav>
+
+            <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-cyber animate-glow">
+                    <span class="pulse-dot"></span> SECURE SHELL SYSTEM ACTIVE
+                </div>
+                <h1 class="hero-title">
+                    Hi, I am <span class="highlight-cyan">Wildan Daffa</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" id="typed-output"></span><span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Information Technology student at President University passionate about cybersecurity, web
+                    development, and digital infrastructure. Focused on building highly performant and secure digital
+                    solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="CV_Wildan_Daffa_Abdillah_ATS.docx" download class="btn btn-primary" id="btn-download-cv">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/wildandaffabdillah" target="_blank" class="social-icon" id="hero-github"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" id="hero-linkedin"
+                        aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/#" target="_blank" class="social-icon" id="hero-whatsapp"
+                        aria-label="WhatsApp Contact">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-wrapper">
+                    <!-- Tech Cyber Circle Visualizer -->
+                    <div class="tech-circle outer"></div>
+                    <div class="tech-circle middle"></div>
+                    <div class="tech-circle inner"></div>
+                    <div class="profile-frame">
+                        <div class="glitch-avatar" id="avatar-container">
+                            <img src="profile.png" alt="Wildan Daffa Abdillah" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="stats-float" id="stat-overlay-1">
+                        <i class="fa-solid fa-shield-halved text-cyan"></i>
+                        <span>OWASP Top 10</span>
+                    </div>
+                    <div class="stats-float" id="stat-overlay-2">
+                        <i class="fa-solid fa-code text-blue"></i>
+                        <span>Python/Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll Down">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;01. Profile /&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual animate-on-scroll">
+                    <div class="console-box">
+                        <div class="console-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="console-title">wda@president-univ:~</span>
+                        </div>
+                        <div class="console-body">
+                            <p class="console-line"><span class="cmd-prompt">wda@sec:~$</span> cat about.txt</p>
+                            <p class="console-response">
+                                Information Technology student at President University. Highly passionate about
+                                information security, web application exploitation, digital infrastructure, and Linux
+                                system administration.
+                            </p>
+                            <p class="console-line"><span class="cmd-prompt">wda@sec:~$</span> cat focus.json</p>
+                            <p class="console-response">
+                                {<br>
+                                &nbsp;&nbsp;&quot;domain&quot;: &quot;Cybersecurity &amp; Secure Coding&quot;,<br>
+                                &nbsp;&nbsp;&quot;interests&quot;: [&quot;Web Penetration Testing&quot;, &quot;API
+                                Exploits&quot;, &quot;Secure Web Apps&quot;],<br>
+                                &nbsp;&nbsp;&quot;preferred_os&quot;: &quot;Kali Linux &amp; Ubuntu&quot;<br>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info animate-on-scroll">
+                    <h3 class="about-subtitle">IT Student &amp; Aspiring Cybersecurity Specialist</h3>
+                    <p class="about-text">
+                        I combine robust **Web Development** capabilities with a solid **Cybersecurity** foundation to
+                        architect applications that are not only fully functional but also highly resilient to cyber
+                        threats (Secure by Design).
+                    </p>
+                    <p class="about-text">
+                        Throughout my academic journey, I have built reliable web architectures such as the PIXL web
+                        service platform, a secure QR Code attendance scanner system, and conducted analytical sentiment
+                        projects through my internship at **Diskominfosantik Bekasi Regency**, expanding my hands-on
+                        exposure to server infrastructure and enterprise IT support.
+                    </p>
+
+                    <div class="about-metrics">
+                        <div class="metric-card">
+                            <span class="metric-num">5+</span>
+                            <span class="metric-label">Completed Projects</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-num">3+</span>
+                            <span class="metric-label">Sec Certifications</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-num">1</span>
+                            <span class="metric-label">Internship Term</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section-padding" id="skills">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;02. Expertise /&gt;</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category-card animate-on-scroll" id="skills-cyber">
+                    <div class="card-glow-border"></div>
+                    <div class="skill-category-header">
+                        <div class="category-icon text-cyan">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <h3 class="category-title">Cybersecurity</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Web Exploitation</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-cyan" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Basic Penetration Testing</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-cyan" style="width: 75%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Network Security &amp; Forensic</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-cyan" style="width: 70%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Vulnerability Assessment</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-cyan" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category-card animate-on-scroll" id="skills-programming">
+                    <div class="card-glow-border"></div>
+                    <div class="skill-category-header">
+                        <div class="category-icon text-blue">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="category-title">Programming</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">HTML &amp; CSS</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-blue" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-blue" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">PHP &amp; MySQL</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-blue" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Python (Data Scraping &amp; AI Script)</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-blue" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category-card animate-on-scroll" id="skills-tools">
+                    <div class="card-glow-border"></div>
+                    <div class="skill-category-header">
+                        <div class="category-icon text-purple">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <h3 class="category-title">Tools &amp; Infrastructure</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Linux OS (Ubuntu &amp; Kali Linux)</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-purple" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">GitHub &amp; Git Version Control</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-purple" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">VS Code / JetBrains Editors</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-purple" style="width: 95%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">AWS Cloud Infrastructure Basics</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar fill-purple" style="width: 60%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Soft Skills Pills -->
+            <div class="soft-skills-wrapper animate-on-scroll">
+                <h4 class="soft-skills-title">Core Interpersonal Skills</h4>
+                <div class="skills-tags">
+                    <span class="tag-cyber"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+                    <span class="tag-cyber"><i class="fa-solid fa-users"></i> Teamwork &amp; Collab</span>
+                    <span class="tag-cyber"><i class="fa-solid fa-gauge-high"></i> Adaptability</span>
+                    <span class="tag-cyber"><i class="fa-solid fa-clock"></i> Critical Thinking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section section-padding" id="experience">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;03. History /&gt;</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot animate-glow"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-duration"><i class="fa-solid fa-calendar-days"></i> Jun 2025 - Aug
+                                2025 &middot; 3 mos</span>
+                            <h3 class="timeline-title">Programmer internship</h3>
+                            <h4 class="timeline-company">Diskominfosantik Kab Bekasi &middot; Internship</h4>
+                            <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Kantor
+                                Diskominfosantik Komplek Perkantoran Pemkab Bekasi Ds. Sukamahi, Cikarang Pusat Kab.
+                                Bekasi &middot; On-site</span>
+                        </div>
+                        <div class="timeline-body">
+                            <img src="magangdiskominfosantik.png" alt="Magang Diskominfosantik Kabupaten Bekasi"
+                                class="experience-img">
+                            <p class="timeline-text">
+                                Contributed directly to the operational maintenance of network infrastructures and
+                                digital administrative systems at the regional government of Bekasi Regency.
+                            </p>
+                            <ul class="experience-bullets">
+                                <li><strong>Website Maintenance:</strong> Monitored official portal stability, optimized
+                                    CMS template layouts, and resolved server hosting anomalies.</li>
+                                <li><strong>IT Infrastructure Support:</strong> Provisioned hardware rigs, routed
+                                    copper/fiber LAN cabling, and streamlined network diagnostic procedures for civil
+                                    services staff.</li>
+                                <li><strong>Social Media Sentiment Analysis:</strong> Built and executed Python crawling
+                                    models using NLP pipelines to aggregate public feedback and synthesize sentiment
+                                    intelligence reports.</li>
+                                <li><strong>Government Digital Systems:</strong> Maintained security policies for
+                                    internal municipal databases to ensure high uptime and defense against local service
+                                    breaches.</li>
+                            </ul>
+                            <div class="experience-tech-tags">
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Linux Server</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Network Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section-padding" id="projects">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;04. Works /&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" id="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="security">Cybersecurity &amp; Python</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-laptop-code project-placeholder-icon"></i>
+                        <span class="project-tag-absolute">Web Platform</span>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">PIXL Web Platform</h3>
+                        <p class="project-description">
+                            A contemporary web service orchestration platform that simplifies high-quality website
+                            orders. Designed a robust and secure custom dashboard portal for clientele order tracking.
+                        </p>
+                        <div class="project-role">
+                            <strong>My Role:</strong> Full-Stack Web Developer
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/wildandaffabdillah" target="_blank" class="btn-project-link"
+                                aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-project-link disabled" aria-label="Live Demo Unavailable"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-qrcode project-placeholder-icon"></i>
+                        <span class="project-tag-absolute">System Utility</span>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">QR Attendance System</h3>
+                        <p class="project-description">
+                            A secure, real-time QR-based verification utility designed to eliminate administrative
+                            forgery. Seamlessly registers student check-ins and cross-references them against active
+                            MySQL tables.
+                        </p>
+                        <div class="project-role">
+                            <strong>My Role:</strong> Lead Developer &amp; Secure Architect
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">JavaScript (QR-Scanner)</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">Bootstrap 5</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/wildandaffabdillah" target="_blank" class="btn-project-link"
+                                aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-project-link disabled" aria-label="Live Demo Unavailable"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-category="security">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-magnifying-glass-chart project-placeholder-icon"></i>
+                        <span class="project-tag-absolute">Data Analytics</span>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Social Media Sentiment Analysis</h3>
+                        <p class="project-description">
+                            An automated Python extraction architecture designed to collect high-volume social network
+                            public feedback, process strings using NLP, and render community trend graphs.
+                        </p>
+                        <div class="project-role">
+                            <strong>My Role:</strong> Python Developer / Data Analyst
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">BeautifulSoup / Twint</span>
+                            <span class="tech-badge">NLTK NLP</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Matplotlib</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/wildandaffabdillah" target="_blank" class="btn-project-link"
+                                aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-project-link disabled" aria-label="Live Demo Unavailable"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section section-padding" id="certifications">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;05. Achievements /&gt;</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-cyan">
+                        <i class="fa-solid fa-user-ninja"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Web Exploitation</h3>
+                        <span class="cert-issuer">Cyberkarta</span>
+                        <p class="cert-description">Practical certification demonstrating proficiency in vulnerability
+                            discovery, advanced exploitation methodologies, and effective remediation of web application
+                            flaws.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-shield-halved"></i> Certified Security</span>
+                        <button class="btn btn-cert-view" data-cert="Web Exploitatiom.png">
+                            <i class="fa-solid fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-cyan">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Extracting Secrets Flags from Vulnerable Sites</h3>
+                        <span class="cert-issuer">Cyberkarta / CTF learning labs</span>
+                        <p class="cert-description">Certificate awarded for successfully completing offensive security
+                            challenges involving secret flag extraction inside controlled, vulnerable laboratory
+                            environments.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-flag"></i> Lab Verified</span>
+                        <button class="btn btn-cert-view"
+                            data-cert="Web exploitation_ Extracting secrets flags from vulnerable sites.png">
+                            <i class="fa-solid fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-blue">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Data Center Fundamentals</h3>
+                        <span class="cert-issuer">Industry Academy</span>
+                        <p class="cert-description">Acquired understanding of physical data center topography, critical
+                            power distribution rigs, cooling mechanics, carbon efficiency targets, and server
+                            redundancy.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-network-wired"></i> Infrastructure</span>
+                        <button class="btn btn-cert-view" data-cert="Dasar-dasar Data Center untuk Profesional IT.png">
+                            <i class="fa-solid fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-cyan">
+                        <i class="fa-solid fa-mask"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Ethical Hacker For Dummies</h3>
+                        <span class="cert-issuer">Industry Academy / Self-learning</span>
+                        <p class="cert-description">Fundamental comprehension of offensive ethical hacking strategies,
+                            active port scanning, automated system threat scans, and baseline cybersecurity defenses.
+                        </p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-user-shield"></i> Security Core</span>
+                        <button class="btn btn-cert-view" data-cert="Ethical Hacker For Dummies.png">
+                            <i class="fa-solid fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-blue">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Introduction to Programming Using Python</h3>
+                        <span class="cert-issuer">Industry Academy</span>
+                        <p class="cert-description">Demonstrated competency in structured Python programming concepts,
+                            basic algorithms, local file reading/writing, functional logic, and introductory data
+                            science.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-terminal"></i> Programming Core</span>
+                        <button class="btn btn-cert-view" data-cert="Introduction to Programming Using Python.png">
+                            <i class="fa-solid fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 6 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-purple">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">AWS Serverless Analytics</h3>
+                        <span class="cert-issuer">Amazon Web Services</span>
+                        <p class="cert-description">Proficiency in designing serverless analytical architectures
+                            utilizing fully-managed AWS services such as Athena, Glue, and Lambda.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-cloud"></i> Cloud Architect</span>
+                    </div>
+                </div>
+
+                <!-- Cert 7 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon-box text-purple">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="cert-title">Amazon Redshift</h3>
+                        <span class="cert-issuer">Amazon Web Services</span>
+                        <p class="cert-description">Competency in configuring, scaling, and managing fast, secure, and
+                            integrated petabyte-scale Data Warehousing systems within the AWS ecosystem.</p>
+                        <span class="cert-tag-sec"><i class="fa-solid fa-database"></i> Database Warehouse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cybersecurity Terminal CLI Section -->
+    <section class="terminal-section section-padding" id="terminal">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;06. Interactive Shell /&gt;</span>
+                <h2 class="section-title">Cybersecurity Journey Terminal</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">Type commands in the interactive console below to explore my secure learning
+                    logs and hidden flags.</p>
+            </div>
+
+            <div class="terminal-container animate-on-scroll" id="terminal-interface">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="term-dot close"></span>
+                        <span class="term-dot minimize"></span>
+                        <span class="term-dot maximize"></span>
+                    </div>
+                    <div class="terminal-bar-title"><i class="fa-solid fa-terminal"></i> wda-secure-shell-v2.8.2</div>
+                    <div class="terminal-status"><span class="conn-status"></span> Connected</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="terminal-output" id="terminal-output">
+                        <p class="term-welcome">========================================================</p>
+                        <p class="term-welcome"> WELCOME TO THE CYBERSECURITY JOURNEY PORTAL v2.8.2 </p>
+                        <p class="term-welcome">========================================================</p>
+                        <p class="term-welcome">Type <span class="term-cmd-highlight">help</span> to list all available
+                            system commands.</p>
+                        <p class="term-welcome">Ready. Logged in as: guest_user@wda.sec</p>
+                        <p class="term-welcome">&nbsp;</p>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="term-prompt">guest@wda.sec:~$</span>
+                        <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false"
+                            aria-label="Terminal Command Input">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Showcase Section -->
+    <section class="github-section section-padding" id="github-showcase">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;07. Open Source /&gt;</span>
+                <h2 class="section-title">GitHub Contribution &amp; Stats</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="github-grid">
+                <!-- GitHub Activity simulated -->
+                <div class="github-card activity animate-on-scroll">
+                    <div class="card-glow-border"></div>
+                    <h3 class="git-card-title"><i class="fa-brands fa-github text-cyan"></i> @wildandaffabdillah
+                        Contributions</h3>
+                    <div class="git-contribution-wrapper">
+                        <!-- Contribution calendar simulated grid -->
+                        <div class="git-calendar" id="simulated-git-calendar">
+                            <!-- JS will generate 53 weeks * 7 days tiles -->
+                        </div>
+                        <div class="git-legend">
+                            <span>Less</span>
+                            <span class="sq sq-0"></span>
+                            <span class="sq sq-1"></span>
+                            <span class="sq sq-2"></span>
+                            <span class="sq sq-3"></span>
+                            <span class="sq sq-4"></span>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Stats simulated -->
+                <div class="github-card stats animate-on-scroll">
+                    <div class="card-glow-border"></div>
+                    <h3 class="git-card-title"><i class="fa-solid fa-chart-simple text-blue"></i> Repo &amp; Language
+                        Stats</h3>
+                    <div class="git-stats-grid">
+                        <div class="git-stat-box">
+                            <span class="git-stat-num">240+</span>
+                            <span class="git-stat-label">Commits This Year</span>
+                        </div>
+                        <div class="git-stat-box">
+                            <span class="git-stat-num">8</span>
+                            <span class="git-stat-label">Public Repositories</span>
+                        </div>
+
+                        <div class="git-languages">
+                            <h4 class="git-lang-title">Most Used Languages</h4>
+                            <div class="lang-bars">
+                                <div class="lang-bar-item">
+                                    <div class="lang-info"><span>PHP</span><span>45%</span></div>
+                                    <div class="lang-progress-container">
+                                        <div class="lang-progress fill-blue" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                                <div class="lang-bar-item">
+                                    <div class="lang-info"><span>Python</span><span>30%</span></div>
+                                    <div class="lang-progress-container">
+                                        <div class="lang-progress fill-cyan" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="lang-bar-item">
+                                    <div class="lang-info"><span>JavaScript</span><span>15%</span></div>
+                                    <div class="lang-progress-container">
+                                        <div class="lang-progress fill-purple" style="width: 15%"></div>
+                                    </div>
+                                </div>
+                                <div class="lang-bar-item">
+                                    <div class="lang-info"><span>Shell / CSS</span><span>10%</span></div>
+                                    <div class="lang-progress-container">
+                                        <div class="lang-progress" style="width: 10%; background-color: #f1e05a;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="section-container">
+            <div class="section-header center-align">
+                <span class="section-tag">&lt;08. Gateway /&gt;</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact info -->
+                <div class="contact-info-card animate-on-scroll">
+                    <h3 class="contact-card-title">Let's Establish a Connection</h3>
+                    <p class="contact-card-text">
+                        If you are looking to collaborate on secure web engineering initiatives, discuss internship/IT
+                        support prospects, or simply want to inquire about my cybersecurity labs, feel free to drop a
+                        message!
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-envelope text-cyan"></i></div>
+                            <div class="detail-content">
+                                <span class="detail-label">Email</span>
+                                <a href="dafkaihan10@gmail.com" class="detail-value">dafkaihan10@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-brands fa-linkedin-in text-blue"></i></div>
+                            <div class="detail-content">
+                                <span class="detail-label">LinkedIn</span>
+                                <a href="https://linkedin.com" target="_blank" class="detail-value">Wildan Daffa
+                                    Abdillah</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-brands fa-whatsapp text-green"></i></div>
+                            <div class="detail-content">
+                                <span class="detail-label">WhatsApp</span>
+                                <a href="https://wa.me/#" target="_blank" class="detail-value">+62 (Direct Contact)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card animate-on-scroll">
+                    <div class="card-glow-border"></div>
+                    <form class="cyber-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="form-name" required placeholder="Your Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" required placeholder="your.email@example.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-circle-info input-icon"></i>
+                                    <input type="text" id="form-subject" required placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-comment input-icon message-icon"></i>
+                                    <textarea id="form-message" rows="5" required
+                                        placeholder="Write your secure message here..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block animate-glow" id="btn-submit-form">
+                            <i class="fa-solid fa-paper-plane"></i> Send Secure Message
+                        </button>
+                    </form>
+                    <div class="form-notification" id="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <span class="logo-accent">&lt;</span>WDA<span class="logo-accent">.sec /&gt;</span>
+                </a>
+                <p class="footer-tagline">Building Secure, Reliable, and High-Performance Digital Infrastructures.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/wildandaffabdillah" target="_blank" class="footer-social-icon"
+                    aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="footer-social-icon"
+                    aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/#" target="_blank" class="footer-social-icon" aria-label="WhatsApp Contact"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:dafkaihan10@gmail.com" class="footer-social-icon" aria-label="Email Contact"><i
+                        class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wildan Daffa Abdillah. All Rights Reserved. Built with Premium Cyber UI aesthetics.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Certificate Lightbox Modal Overlay -->
+    <div id="cert-modal" class="cert-modal">
+        <span class="cert-modal-close" id="cert-modal-close">&times;</span>
+        <img class="cert-modal-content" id="cert-modal-img" alt="Zoomed Certificate">
+        <div id="cert-modal-caption" class="cert-modal-caption"></div>
+    </div>
+
+    <!-- Core Javascript Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
