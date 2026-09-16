@@ -287,46 +287,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. PROGRAMMATIC SIMULATED GITHUB CONTRIBUTION CALENDAR
-    const gitCalendar = document.getElementById('simulated-git-calendar');
-    
-    if (gitCalendar) {
-        // We generate 53 weeks * 7 days = 371 calendar cells
-        const cellCount = 371;
-        
-        // Define realistic distribution weights for commits
-        // 0: none, 1: low, 2: medium, 3: high, 4: very high
-        const contributionLevels = [
-            0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 4,
-            0, 0, 1, 1, 1, 1, 2, 2, 2, 0, 0, 0, 1, 1, 2
-        ];
-        
-        const fragment = document.createDocumentFragment();
-        
-        for (let i = 0; i < cellCount; i++) {
-            const tile = document.createElement('div');
-            // Distribute randomly with weights to look realistic
-            const levelIndex = Math.floor(Math.random() * contributionLevels.length);
-            const level = contributionLevels[levelIndex];
-            
-            tile.className = `git-calendar-tile sq-${level}`;
-            
-            // Tooltip showing simulated commit counts on hover
-            const dateOffset = cellCount - i;
-            const simulatedDate = new Date();
-            simulatedDate.setDate(simulatedDate.getDate() - dateOffset);
-            
-            const commitsNum = level === 0 ? 'No' : level * Math.floor(Math.random() * 3 + 1);
-            const tooltipText = `${commitsNum} commits on ${simulatedDate.toLocaleDateString('id-ID', {day: 'numeric', month: 'short', year: 'numeric'})}`;
-            
-            tile.setAttribute('title', tooltipText);
-            fragment.appendChild(tile);
-        }
-        
-        gitCalendar.appendChild(fragment);
-    }
 
-    // 7. CONTACT FORM SUBMISSION ANGLER
+
+    // 7. CONTACT FORM SUBMISSION
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('btn-submit-form');
@@ -335,30 +298,22 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Show secure transmit warning and animate
             submitBtn.disabled = true;
             const originalBtnContent = submitBtn.innerHTML;
-            submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Encrypting Data Stream...`;
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Sending...`;
             
             setTimeout(() => {
-                submitBtn.innerHTML = `<i class="fa-solid fa-shield-halved fa-beat-fade"></i> Establishing Handshake...`;
+                formStatus.className = 'form-notification success';
+                formStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.`;
+                
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnContent;
+                contactForm.reset();
                 
                 setTimeout(() => {
-                    // Show success status
-                    formStatus.className = 'form-notification success';
-                    formStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i> Connection Established! Message transmitted securely. I will respond to your address shortly.`;
-                    
-                    // Reset button and inputs
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalBtnContent;
-                    contactForm.reset();
-                    
-                    // Fade out success notification after 5s
-                    setTimeout(() => {
-                        formStatus.style.display = 'none';
-                    }, 5000);
-                }, 1500);
-            }, 1200);
+                    formStatus.style.display = 'none';
+                }, 4000);
+            }, 1000);
         });
     }
 

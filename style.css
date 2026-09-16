@@ -15,8 +15,8 @@
     --accent-purple: #8b5cf6;     /* Secure dark purple */
     --text-white: #f8fafc;        /* Ultra light grey-white */
     --text-gray: #94a3b8;         /* Subdued grey */
-    --glow-cyan: 0 0 15px rgba(6, 182, 212, 0.4);
-    --glow-blue: 0 0 15px rgba(59, 130, 246, 0.4);
+    --glow-cyan: 0 0 8px rgba(6, 182, 212, 0.2);
+    --glow-blue: 0 0 8px rgba(59, 130, 246, 0.2);
     --border-color: rgba(148, 163, 184, 0.1);
     
     --font-heading: 'Poppins', sans-serif;
@@ -184,7 +184,7 @@ a {
 }
 
 .btn-primary:hover {
-    box-shadow: 0 0 25px rgba(6, 182, 212, 0.6);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.3);
     transform: translateY(-2px);
 }
 
@@ -1379,147 +1379,7 @@ a {
     margin: 5px 0 15px 15px;
 }
 
-/* 12. GITHUB SHOWCASE */
-.github-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.github-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 30px;
-    position: relative;
-    backdrop-filter: blur(10px);
-}
-
-.git-card-title {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.git-contribution-wrapper {
-    overflow-x: auto;
-}
-
-.git-calendar {
-    display: grid;
-    grid-template-flow: column;
-    grid-template-columns: repeat(53, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 3px;
-    width: 100%;
-    min-width: 600px;
-}
-
-.git-calendar-tile {
-    width: 9px;
-    height: 9px;
-    border-radius: 1px;
-    transition: var(--transition-fast);
-}
-
-.sq-0 { background-color: #0e1629; }
-.sq-1 { background-color: #0e4429; }
-.sq-2 { background-color: #006d32; }
-.sq-3 { background-color: #26a641; }
-.sq-4 { background-color: #39d353; }
-
-.git-legend {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 6px;
-    margin-top: 15px;
-    font-size: 0.75rem;
-    color: var(--text-gray);
-}
-
-.git-legend .sq {
-    width: 9px;
-    height: 9px;
-    border-radius: 1px;
-    display: inline-block;
-}
-
-.git-stats-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.git-stat-box {
-    background: rgba(148, 163, 184, 0.02);
-    border: 1px solid var(--border-color);
-    padding: 15px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.git-stat-num {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-cyan);
-}
-
-.git-stat-label {
-    font-size: 0.85rem;
-    color: var(--text-gray);
-}
-
-.git-languages {
-    margin-top: 10px;
-}
-
-.git-lang-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #cbd5e1;
-}
-
-.lang-bars {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.lang-bar-item {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.lang-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.78rem;
-    color: var(--text-gray);
-    font-weight: 500;
-}
-
-.lang-progress-container {
-    width: 100%;
-    height: 4px;
-    background-color: rgba(148, 163, 184, 0.1);
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.lang-progress {
-    height: 100%;
-    border-radius: 2px;
-}
+/* 12. (Removed) */
 
 /* 13. CONTACT SECTION */
 .contact-grid {
